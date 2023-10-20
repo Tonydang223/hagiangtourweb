@@ -20,6 +20,7 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="stylesheet" href="./css/magnific-popup.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
   </head>
   <body>
@@ -57,7 +58,7 @@
           <nav class="navbar">
             <ul class="items-nav">
               <li class="itemNav">
-                <a class="itemLink" aria-current="page" href="./index.html">
+                <a class="itemLink active" aria-current="page" href="#home">
                   <span class="contentItemNav">
                     <span class="activeHoverNavItem">
                       <svg
@@ -148,8 +149,8 @@
                   </span>
                 </a>
               </li>
-              <li class="itemNav" id="popUpBtn">
-                <a class="itemLink" aria-current="page" href="#book">
+              <li class="itemNav popUpBtn">
+                <a class="itemLink" aria-current="page">
                   <span class="contentItemNav">
                     <span class="activeHoverNavItem">
                       <svg
@@ -249,7 +250,7 @@
                 </a>
               </li>
               <li class="itemNav">
-                <a class="itemLink" aria-current="page" href="#news">
+                <a class="itemLink" aria-current="page" href="./blogs.html">
                   <span class="contentItemNav">
                     <span class="activeHoverNavItem">
                       <svg
@@ -458,11 +459,11 @@
           <img src="./asset/imgs/duoibg.jpg" alt="hoavan" />
         </div>
       </section>
-      <section class="about sectionMain">
+      <section class="about sectionMain" id="about">
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h2>Ha Giang Tour</h2>
+              <h2 class="titleHeadForEachP">Ha Giang <span>Tour</span></h2>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -547,637 +548,877 @@
           </div>
         </div>
       </section>
-      <section class="travelDetailed sectionMain">
-        <h2>Travel Detailed</h2>
-        <div class="circles">
-          <ul id="menuScrollDay">
-            <li data-scroll-menu="day1"><h3>1</h3></li>
-            <li data-scroll-menu="day2"><h3>2</h3></li>
-            <li data-scroll-menu="day3"><h3>3</h3></li>
-            <li data-scroll-menu="day4"><h3>4</h3></li>
-          </ul>
+      <section class="travelDetailed sectionMain" id="detail">
+        <h2 class="titleHeadForEachP">Our Tour <span>Details</span></h2>
+
+        <ul class="travelDates">
+          <li class="tablinkTrvD active-tab-travel">
+            <a href="#tabContentTravelDetail1">3 day 2 nights</a>
+          </li>
+          <li class="tablinkTrvD">
+            <a href="#tabContentTravelDetail2">4 day 3 nights</a>
+          </li>
+        </ul>
+
+        <div class="contentTabTravelDetails" id="tabContentTravelDetail1">
+          <div class="circles">
+            <ul id="menuScrollDay">
+              <li data-scroll-menu="day1of3"><h3>1</h3></li>
+              <li data-scroll-menu="day2of3"><h3>2</h3></li>
+              <li data-scroll-menu="day3of3"><h3>3</h3></li>
+            </ul>
+          </div>
+          <div class="container-fluid">
+            <div id="day1of3">
+              <h4 class="itemBannerNConner">
+                <span class="contentBannerNConner">
+                  <span class="activeHoverNavItem clip0">
+                    <svg
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      fill="#fff"
+                      viewBox="0 0 15.7 30"
+                      style="enable-background: new 0 0 15.7 30"
+                      xml:space="preserve"
+                      class="mkdf-active-hover-left"
+                    >
+                      <polygon
+                        class="st0"
+                        points="2.6,1 0.7,3.3 2,5.8 2.3,7.6 2.9,8.7 4.4,10.5 3.9,10.8 4.4,11.9 4.4,12.8 4.1,13.8 3.3,14.7 3.9,15.8 4.4,16.8 4,17.5 3.5,18.1 2.2,20.2 3.4,21.5 4.2,24.1 3.4,25.4 2.5,27.4 2.5,27.8 3.2,28.3 4.1,28.5 4.9,29 14.8,29 14.8,1 "
+                      ></polygon>
+                    </svg>
+                    <span class="ver-mid"></span>
+                    <svg
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      fill="#fff"
+                      viewBox="0 0 13.3 30"
+                      style="enable-background: new 0 0 13.3 30"
+                      xml:space="preserve"
+                      class="mkdf-active-hover-right"
+                    >
+                      <polygon
+                        class="st0"
+                        points="10,1 10.2,2.1 10.6,2.9 10.6,3.3 10.8,3.7 10.8,4.3 11,5 11,5.7 11,6.3 10.5,6.7 10.8,7.3 11,7.8 11.6,8.3 11.6,8.6 11.5,8.9 11.6,9.9 11.6,10.5 12.4,11.6 12.1,12 12.4,12.2 11.8,12.8 11.4,13.5 11.6,13.7 11.9,13.7 12,13.9 11.5,15.1 10.8,16 9.1,17.7 9.7,18.2 9.3,19 9.7,19.8 9.6,20.6 9.7,21.5 9.6,21.9 9.6,22.3 10.1,22.8 9.6,23.6 9.7,24 9.7,24.2 9.9,24.4 9.5,24.7 9.3,25.4 9.3,25.9 8.8,26.2 8.5,27.1 8.8,27.8 9.4,28.6 7.8,29 0.9,29 0.9,1 "
+                      ></polygon>
+                    </svg>
+                  </span>
+                  <span class="item-out">
+                    <span>Day 1: Ha Giang - Thai An - Du Bang (120km) </span>
+                  </span>
+                </span>
+              </h4>
+              <div class="timelineWrap">
+                <ul class="timeLineA">
+                  <li class="itemTimeline">
+                    <div>
+                      <h3>Yên Bản</h3>
+                      <p>
+                        Lorem ipsum is placeholder text commonly used in the
+                        graphic, print, and publishing industries for previewing
+                        layouts and visual mockups. Lorem Ipsum Generator.
+                      </p>
+                      <div class="row">
+                        <div class="col-6">
+                          <img src="./asset/imgs/anhbg.jpg" alt="" />
+                        </div>
+                        <div class="col-6">
+                          <img src="./asset/imgs/anhbg.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="itemTimeline">
+                    <div>
+                        <h3>Yên Bản</h3>
+                        <p>
+                          Lorem ipsum is placeholder text commonly used in the
+                          graphic, print, and publishing industries for previewing
+                          layouts and visual mockups. Lorem Ipsum Generator.
+                        </p>
+                        <div>
+                          <img src="./asset/imgs/anhbg.jpg" alt="" />
+                        </div>
+                    </div>
+                  </li>
+                  <li class="itemTimeline">
+                    <div>
+                        <h3>Yên Bản</h3>
+                        <p>
+                          Lorem ipsum is placeholder text commonly used in the
+                          graphic, print, and publishing industries for previewing
+                          layouts and visual mockups. Lorem Ipsum Generator.
+                        </p>
+                        <div class="row">
+                          <div class="col-12">
+                            <img src="./asset/imgs/anhbg.jpg" alt="" />
+                          </div>
+                          <div class="col-6">
+                            <img src="./asset/imgs/anhbg.jpg" alt="" />
+                          </div>
+                          <div class="col-6">
+                            <img src="./asset/imgs/anhbg.jpg" alt="" />
+                          </div>
+                        </div>
+                    </div>
+
+                  </li>
+                </ul>
+              </div>
+
+              <div class="row">
+                <div class="col-12 text-center">
+                  <h4>What To Expect On Day 1</h4>
+                  <p>
+                    On the first night of the loop you’ll be sleeping in the
+                    village of the H’mong people, allowing you to experience
+                    first hand the daily life of the locals. Although you won’t
+                    be eating at a fancy fine dining restaurant, the villagers
+                    will prepare authentic local specials just for you. In order
+                    to welcome you to their village, the villagers use fresh
+                    vegetables from the garden and domestic chickens to mark
+                    this special occasion. You can expect a warm meal, friendly
+                    locals and a a cozy environment to rest your head after a
+                    long day on the Ha Giang Loop.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="day2of3">
+              <h4 class="itemBannerNConner">
+                <span class="contentBannerNConner">
+                  <span class="activeHoverNavItem clip0">
+                    <svg
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      fill="#fff"
+                      viewBox="0 0 15.7 30"
+                      style="enable-background: new 0 0 15.7 30"
+                      xml:space="preserve"
+                      class="mkdf-active-hover-left"
+                    >
+                      <polygon
+                        class="st0"
+                        points="2.6,1 0.7,3.3 2,5.8 2.3,7.6 2.9,8.7 4.4,10.5 3.9,10.8 4.4,11.9 4.4,12.8 4.1,13.8 3.3,14.7 3.9,15.8 4.4,16.8 4,17.5 3.5,18.1 2.2,20.2 3.4,21.5 4.2,24.1 3.4,25.4 2.5,27.4 2.5,27.8 3.2,28.3 4.1,28.5 4.9,29 14.8,29 14.8,1 "
+                      ></polygon>
+                    </svg>
+                    <span class="ver-mid"></span>
+                    <svg
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      fill="#fff"
+                      viewBox="0 0 13.3 30"
+                      style="enable-background: new 0 0 13.3 30"
+                      xml:space="preserve"
+                      class="mkdf-active-hover-right"
+                    >
+                      <polygon
+                        class="st0"
+                        points="10,1 10.2,2.1 10.6,2.9 10.6,3.3 10.8,3.7 10.8,4.3 11,5 11,5.7 11,6.3 10.5,6.7 10.8,7.3 11,7.8 11.6,8.3 11.6,8.6 11.5,8.9 11.6,9.9 11.6,10.5 12.4,11.6 12.1,12 12.4,12.2 11.8,12.8 11.4,13.5 11.6,13.7 11.9,13.7 12,13.9 11.5,15.1 10.8,16 9.1,17.7 9.7,18.2 9.3,19 9.7,19.8 9.6,20.6 9.7,21.5 9.6,21.9 9.6,22.3 10.1,22.8 9.6,23.6 9.7,24 9.7,24.2 9.9,24.4 9.5,24.7 9.3,25.4 9.3,25.9 8.8,26.2 8.5,27.1 8.8,27.8 9.4,28.6 7.8,29 0.9,29 0.9,1 "
+                      ></polygon>
+                    </svg>
+                  </span>
+                  <span class="item-out">
+                    <span>Day 2: Ha Giang - Thai An - Du Bang (120km) </span>
+                  </span>
+                </span>
+              </h4>
+              <div class="timelineWrap">
+                <ul class="timeLineA">
+                  <li class="itemTimeline">
+                    <div>
+                      <h3>Yên Bản</h3>
+                      <p>
+                        Lorem ipsum is placeholder text commonly used in the
+                        graphic, print, and publishing industries for previewing
+                        layouts and visual mockups. Lorem Ipsum Generator.
+                      </p>
+                      <div class="row">
+                        <div class="col-6">
+                          <img src="./asset/imgs/anhbg.jpg" alt="" />
+                        </div>
+                        <div class="col-6">
+                          <img src="./asset/imgs/anhbg.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="itemTimeline">
+                    <div>
+                        <h3>Yên Bản</h3>
+                        <p>
+                          Lorem ipsum is placeholder text commonly used in the
+                          graphic, print, and publishing industries for previewing
+                          layouts and visual mockups. Lorem Ipsum Generator.
+                        </p>
+                        <div>
+                          <img src="./asset/imgs/anhbg.jpg" alt="" />
+                        </div>
+                    </div>
+                  </li>
+                  <li class="itemTimeline">
+                    <div>
+                        <h3>Yên Bản</h3>
+                        <p>
+                          Lorem ipsum is placeholder text commonly used in the
+                          graphic, print, and publishing industries for previewing
+                          layouts and visual mockups. Lorem Ipsum Generator.
+                        </p>
+                        <div class="row">
+                          <div class="col-12">
+                            <img src="./asset/imgs/anhbg.jpg" alt="" />
+                          </div>
+                          <div class="col-6">
+                            <img src="./asset/imgs/anhbg.jpg" alt="" />
+                          </div>
+                          <div class="col-6">
+                            <img src="./asset/imgs/anhbg.jpg" alt="" />
+                          </div>
+                        </div>
+                    </div>
+
+                  </li>
+                </ul>
+              </div>
+              <div class="row">
+                <div class="col-12 text-center">
+                  <h4>What To Expect On Day 1</h4>
+                  <p>
+                    On the first night of the loop you’ll be sleeping in the
+                    village of the H’mong people, allowing you to experience
+                    first hand the daily life of the locals. Although you won’t
+                    be eating at a fancy fine dining restaurant, the villagers
+                    will prepare authentic local specials just for you. In order
+                    to welcome you to their village, the villagers use fresh
+                    vegetables from the garden and domestic chickens to mark
+                    this special occasion. You can expect a warm meal, friendly
+                    locals and a a cozy environment to rest your head after a
+                    long day on the Ha Giang Loop.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="day3of3">
+              <h4 class="itemBannerNConner">
+                <span class="contentBannerNConner">
+                  <span class="activeHoverNavItem clip0">
+                    <svg
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      fill="#fff"
+                      viewBox="0 0 15.7 30"
+                      style="enable-background: new 0 0 15.7 30"
+                      xml:space="preserve"
+                      class="mkdf-active-hover-left"
+                    >
+                      <polygon
+                        class="st0"
+                        points="2.6,1 0.7,3.3 2,5.8 2.3,7.6 2.9,8.7 4.4,10.5 3.9,10.8 4.4,11.9 4.4,12.8 4.1,13.8 3.3,14.7 3.9,15.8 4.4,16.8 4,17.5 3.5,18.1 2.2,20.2 3.4,21.5 4.2,24.1 3.4,25.4 2.5,27.4 2.5,27.8 3.2,28.3 4.1,28.5 4.9,29 14.8,29 14.8,1 "
+                      ></polygon>
+                    </svg>
+                    <span class="ver-mid"></span>
+                    <svg
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      fill="#fff"
+                      viewBox="0 0 13.3 30"
+                      style="enable-background: new 0 0 13.3 30"
+                      xml:space="preserve"
+                      class="mkdf-active-hover-right"
+                    >
+                      <polygon
+                        class="st0"
+                        points="10,1 10.2,2.1 10.6,2.9 10.6,3.3 10.8,3.7 10.8,4.3 11,5 11,5.7 11,6.3 10.5,6.7 10.8,7.3 11,7.8 11.6,8.3 11.6,8.6 11.5,8.9 11.6,9.9 11.6,10.5 12.4,11.6 12.1,12 12.4,12.2 11.8,12.8 11.4,13.5 11.6,13.7 11.9,13.7 12,13.9 11.5,15.1 10.8,16 9.1,17.7 9.7,18.2 9.3,19 9.7,19.8 9.6,20.6 9.7,21.5 9.6,21.9 9.6,22.3 10.1,22.8 9.6,23.6 9.7,24 9.7,24.2 9.9,24.4 9.5,24.7 9.3,25.4 9.3,25.9 8.8,26.2 8.5,27.1 8.8,27.8 9.4,28.6 7.8,29 0.9,29 0.9,1 "
+                      ></polygon>
+                    </svg>
+                  </span>
+                  <span class="item-out">
+                    <span>Day 3: Ha Giang - Thai An - Du Bang (120km) </span>
+                  </span>
+                </span>
+              </h4>
+              <div class="timelineWrap">
+                <ul class="timeLineA">
+                  <li class="itemTimeline">
+                    <div>
+                      <h3>Yên Bản</h3>
+                      <p>
+                        Lorem ipsum is placeholder text commonly used in the
+                        graphic, print, and publishing industries for previewing
+                        layouts and visual mockups. Lorem Ipsum Generator.
+                      </p>
+                      <div class="row">
+                        <div class="col-6">
+                          <img src="./asset/imgs/anhbg.jpg" alt="" />
+                        </div>
+                        <div class="col-6">
+                          <img src="./asset/imgs/anhbg.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="itemTimeline">
+                    <div>
+                        <h3>Yên Bản</h3>
+                        <p>
+                          Lorem ipsum is placeholder text commonly used in the
+                          graphic, print, and publishing industries for previewing
+                          layouts and visual mockups. Lorem Ipsum Generator.
+                        </p>
+                        <div>
+                          <img src="./asset/imgs/anhbg.jpg" alt="" />
+                        </div>
+                    </div>
+                  </li>
+                  <li class="itemTimeline">
+                    <div>
+                        <h3>Yên Bản</h3>
+                        <p>
+                          Lorem ipsum is placeholder text commonly used in the
+                          graphic, print, and publishing industries for previewing
+                          layouts and visual mockups. Lorem Ipsum Generator.
+                        </p>
+                        <div class="row">
+                          <div class="col-12">
+                            <img src="./asset/imgs/anhbg.jpg" alt="" />
+                          </div>
+                          <div class="col-6">
+                            <img src="./asset/imgs/anhbg.jpg" alt="" />
+                          </div>
+                          <div class="col-6">
+                            <img src="./asset/imgs/anhbg.jpg" alt="" />
+                          </div>
+                        </div>
+                    </div>
+
+                  </li>
+                </ul>
+              </div>
+              <div class="row">
+                <div class="col-12 text-center">
+                  <h4>What To Expect On Day 1</h4>
+                  <p>
+                    On the first night of the loop you’ll be sleeping in the
+                    village of the H’mong people, allowing you to experience
+                    first hand the daily life of the locals. Although you won’t
+                    be eating at a fancy fine dining restaurant, the villagers
+                    will prepare authentic local specials just for you. In order
+                    to welcome you to their village, the villagers use fresh
+                    vegetables from the garden and domestic chickens to mark
+                    this special occasion. You can expect a warm meal, friendly
+                    locals and a a cozy environment to rest your head after a
+                    long day on the Ha Giang Loop.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="container-fluid">
-          <div id="day1">
-            <h4 class="itemBannerNConner">
-              <span class="contentBannerNConner">
-                <span class="activeHoverNavItem clip0">
-                  <svg
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px"
-                    y="0px"
-                    fill="#fff"
-                    viewBox="0 0 15.7 30"
-                    style="enable-background: new 0 0 15.7 30"
-                    xml:space="preserve"
-                    class="mkdf-active-hover-left"
-                  >
-                    <polygon
-                      class="st0"
-                      points="2.6,1 0.7,3.3 2,5.8 2.3,7.6 2.9,8.7 4.4,10.5 3.9,10.8 4.4,11.9 4.4,12.8 4.1,13.8 3.3,14.7 3.9,15.8 4.4,16.8 4,17.5 3.5,18.1 2.2,20.2 3.4,21.5 4.2,24.1 3.4,25.4 2.5,27.4 2.5,27.8 3.2,28.3 4.1,28.5 4.9,29 14.8,29 14.8,1 "
-                    ></polygon>
-                  </svg>
-                  <span class="ver-mid"></span>
-                  <svg
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px"
-                    y="0px"
-                    fill="#fff"
-                    viewBox="0 0 13.3 30"
-                    style="enable-background: new 0 0 13.3 30"
-                    xml:space="preserve"
-                    class="mkdf-active-hover-right"
-                  >
-                    <polygon
-                      class="st0"
-                      points="10,1 10.2,2.1 10.6,2.9 10.6,3.3 10.8,3.7 10.8,4.3 11,5 11,5.7 11,6.3 10.5,6.7 10.8,7.3 11,7.8 11.6,8.3 11.6,8.6 11.5,8.9 11.6,9.9 11.6,10.5 12.4,11.6 12.1,12 12.4,12.2 11.8,12.8 11.4,13.5 11.6,13.7 11.9,13.7 12,13.9 11.5,15.1 10.8,16 9.1,17.7 9.7,18.2 9.3,19 9.7,19.8 9.6,20.6 9.7,21.5 9.6,21.9 9.6,22.3 10.1,22.8 9.6,23.6 9.7,24 9.7,24.2 9.9,24.4 9.5,24.7 9.3,25.4 9.3,25.9 8.8,26.2 8.5,27.1 8.8,27.8 9.4,28.6 7.8,29 0.9,29 0.9,1 "
-                    ></polygon>
-                  </svg>
-                </span>
-                <span class="item-out">
-                  <span>Day 1: Ha Giang - Thai An - Du Bang (120km) </span>
-                </span>
-              </span>
-            </h4>
-            <div class="contentDetail">
-              <div class="itemInfo">
-                <div class="imgSm">
-                  <img src="./asset/imgs/anhbg.jpg" alt="" />
-                </div>
-                <h6>Thung Lung Ha Giang</h6>
-                <div class="wrapMapIcMarked">
-                  <div class="circle-marked"></div>
-                </div>
-              </div>
-              <div class="itemInfo">
-                <div class="wrapMapIcMarked">
-                  <div class="circle-marked"></div>
-                </div>
-                <div class="imgSm">
-                  <img src="./asset/imgs/anhbg.jpg" alt="" />
-                </div>
-                <h6>Thung Lung Ha Giang</h6>
-              </div>
-              <div class="itemInfo">
-                <div class="imgSm">
-                  <img src="./asset/imgs/anhbg.jpg" alt="" />
-                </div>
-                <h6>Thung Lung Ha Giang</h6>
-                <div class="wrapMapIcMarked">
-                  <div class="circle-marked"></div>
-                </div>
-              </div>
-              <div class="itemInfo">
-                <div class="imgSm">
-                  <img src="./asset/imgs/anhbg.jpg" alt="" />
-                </div>
-                <h6>Thung Lung Ha Giang</h6>
-                <div class="wrapMapIcMarked">
-                  <div class="circle-marked"></div>
-                </div>
-              </div>
-              <div class="itemInfo">
-                <div class="wrapMapIcMarked">
-                  <div class="circle-marked"></div>
-                </div>
-                <div class="imgSm">
-                  <img src="./asset/imgs/anhbg.jpg" alt="" />
-                </div>
-                <h6>Thung Lung Ha Giang</h6>
-              </div>
-            </div>
-            <div class="contentClearDetail">
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged.
-              </p>
-              <div class="container">
-                <div class="bannerBigDetail">
-                  <div class="itemBannerNConner">
-                    <span class="contentBannerNConner">
-                      <span class="activeHoverNavItem clip0">
-                        <svg
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
-                          x="0px"
-                          y="0px"
-                          fill="#fff"
-                          viewBox="0 0 15.7 30"
-                          style="enable-background: new 0 0 15.7 30"
-                          xml:space="preserve"
-                          class="mkdf-active-hover-left"
-                        >
-                          <polygon
-                            class="st0"
-                            points="2.6,1 0.7,3.3 2,5.8 2.3,7.6 2.9,8.7 4.4,10.5 3.9,10.8 4.4,11.9 4.4,12.8 4.1,13.8 3.3,14.7 3.9,15.8 4.4,16.8 4,17.5 3.5,18.1 2.2,20.2 3.4,21.5 4.2,24.1 3.4,25.4 2.5,27.4 2.5,27.8 3.2,28.3 4.1,28.5 4.9,29 14.8,29 14.8,1 "
-                          ></polygon>
-                        </svg>
-                        <span class="ver-mid"></span>
-                        <svg
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
-                          x="0px"
-                          y="0px"
-                          fill="#fff"
-                          viewBox="0 0 13.3 30"
-                          style="enable-background: new 0 0 13.3 30"
-                          xml:space="preserve"
-                          class="mkdf-active-hover-right"
-                        >
-                          <polygon
-                            class="st0"
-                            points="10,1 10.2,2.1 10.6,2.9 10.6,3.3 10.8,3.7 10.8,4.3 11,5 11,5.7 11,6.3 10.5,6.7 10.8,7.3 11,7.8 11.6,8.3 11.6,8.6 11.5,8.9 11.6,9.9 11.6,10.5 12.4,11.6 12.1,12 12.4,12.2 11.8,12.8 11.4,13.5 11.6,13.7 11.9,13.7 12,13.9 11.5,15.1 10.8,16 9.1,17.7 9.7,18.2 9.3,19 9.7,19.8 9.6,20.6 9.7,21.5 9.6,21.9 9.6,22.3 10.1,22.8 9.6,23.6 9.7,24 9.7,24.2 9.9,24.4 9.5,24.7 9.3,25.4 9.3,25.9 8.8,26.2 8.5,27.1 8.8,27.8 9.4,28.6 7.8,29 0.9,29 0.9,1 "
-                          ></polygon>
-                        </svg>
-                      </span>
-                      <span class="item-out">
-                        <span>Ha Giang - Thai An - Du Bang</span>
-                        <span>
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy
-                        </span>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="contentTabTravelDetails" id="tabContentTravelDetail2">
+          <div class="circles">
+            <ul id="menuScrollDay">
+              <li data-scroll-menu="day1of4"><h3>1</h3></li>
+              <li data-scroll-menu="day2of4"><h3>2</h3></li>
+              <li data-scroll-menu="day3of4"><h3>3</h3></li>
+              <li data-scroll-menu="day4of4"><h3>4</h3></li>
+            </ul>
           </div>
-          <div id="day2">
-            <h4 class="itemBannerNConner">
-              <span class="contentBannerNConner">
-                <span class="activeHoverNavItem clip0">
-                  <svg
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px"
-                    y="0px"
-                    fill="#fff"
-                    viewBox="0 0 15.7 30"
-                    style="enable-background: new 0 0 15.7 30"
-                    xml:space="preserve"
-                    class="mkdf-active-hover-left"
-                  >
-                    <polygon
-                      class="st0"
-                      points="2.6,1 0.7,3.3 2,5.8 2.3,7.6 2.9,8.7 4.4,10.5 3.9,10.8 4.4,11.9 4.4,12.8 4.1,13.8 3.3,14.7 3.9,15.8 4.4,16.8 4,17.5 3.5,18.1 2.2,20.2 3.4,21.5 4.2,24.1 3.4,25.4 2.5,27.4 2.5,27.8 3.2,28.3 4.1,28.5 4.9,29 14.8,29 14.8,1 "
-                    ></polygon>
-                  </svg>
-                  <span class="ver-mid"></span>
-                  <svg
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px"
-                    y="0px"
-                    fill="#fff"
-                    viewBox="0 0 13.3 30"
-                    style="enable-background: new 0 0 13.3 30"
-                    xml:space="preserve"
-                    class="mkdf-active-hover-right"
-                  >
-                    <polygon
-                      class="st0"
-                      points="10,1 10.2,2.1 10.6,2.9 10.6,3.3 10.8,3.7 10.8,4.3 11,5 11,5.7 11,6.3 10.5,6.7 10.8,7.3 11,7.8 11.6,8.3 11.6,8.6 11.5,8.9 11.6,9.9 11.6,10.5 12.4,11.6 12.1,12 12.4,12.2 11.8,12.8 11.4,13.5 11.6,13.7 11.9,13.7 12,13.9 11.5,15.1 10.8,16 9.1,17.7 9.7,18.2 9.3,19 9.7,19.8 9.6,20.6 9.7,21.5 9.6,21.9 9.6,22.3 10.1,22.8 9.6,23.6 9.7,24 9.7,24.2 9.9,24.4 9.5,24.7 9.3,25.4 9.3,25.9 8.8,26.2 8.5,27.1 8.8,27.8 9.4,28.6 7.8,29 0.9,29 0.9,1 "
-                    ></polygon>
-                  </svg>
+          <div class="container-fluid">
+            <div id="day1of4">
+              <h4 class="itemBannerNConner">
+                <span class="contentBannerNConner">
+                  <span class="activeHoverNavItem clip0">
+                    <svg
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      fill="#fff"
+                      viewBox="0 0 15.7 30"
+                      style="enable-background: new 0 0 15.7 30"
+                      xml:space="preserve"
+                      class="mkdf-active-hover-left"
+                    >
+                      <polygon
+                        class="st0"
+                        points="2.6,1 0.7,3.3 2,5.8 2.3,7.6 2.9,8.7 4.4,10.5 3.9,10.8 4.4,11.9 4.4,12.8 4.1,13.8 3.3,14.7 3.9,15.8 4.4,16.8 4,17.5 3.5,18.1 2.2,20.2 3.4,21.5 4.2,24.1 3.4,25.4 2.5,27.4 2.5,27.8 3.2,28.3 4.1,28.5 4.9,29 14.8,29 14.8,1 "
+                      ></polygon>
+                    </svg>
+                    <span class="ver-mid"></span>
+                    <svg
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      fill="#fff"
+                      viewBox="0 0 13.3 30"
+                      style="enable-background: new 0 0 13.3 30"
+                      xml:space="preserve"
+                      class="mkdf-active-hover-right"
+                    >
+                      <polygon
+                        class="st0"
+                        points="10,1 10.2,2.1 10.6,2.9 10.6,3.3 10.8,3.7 10.8,4.3 11,5 11,5.7 11,6.3 10.5,6.7 10.8,7.3 11,7.8 11.6,8.3 11.6,8.6 11.5,8.9 11.6,9.9 11.6,10.5 12.4,11.6 12.1,12 12.4,12.2 11.8,12.8 11.4,13.5 11.6,13.7 11.9,13.7 12,13.9 11.5,15.1 10.8,16 9.1,17.7 9.7,18.2 9.3,19 9.7,19.8 9.6,20.6 9.7,21.5 9.6,21.9 9.6,22.3 10.1,22.8 9.6,23.6 9.7,24 9.7,24.2 9.9,24.4 9.5,24.7 9.3,25.4 9.3,25.9 8.8,26.2 8.5,27.1 8.8,27.8 9.4,28.6 7.8,29 0.9,29 0.9,1 "
+                      ></polygon>
+                    </svg>
+                  </span>
+                  <span class="item-out">
+                    <span>Day 1: Ha Giang - Thai An - Du Bang (120km) </span>
+                  </span>
                 </span>
-                <span class="item-out">
-                  <span>Day 2: Ha Giang - Thai An - Du Bang (120km) </span>
-                </span>
-              </span>
-            </h4>
-            <div class="contentDetail">
-              <div class="itemInfo">
-                <div class="imgSm">
-                  <img src="./asset/imgs/anhbg.jpg" alt="" />
-                </div>
-                <h6>Thung Lung Ha Giang</h6>
-                <div class="wrapMapIcMarked">
-                  <div class="circle-marked"></div>
-                </div>
+              </h4>
+              <div class="timelineWrap">
+                <ul class="timeLineA">
+                  <li class="itemTimeline">
+                    <div>
+                      <h3>Yên Bản</h3>
+                      <p>
+                        Lorem ipsum is placeholder text commonly used in the
+                        graphic, print, and publishing industries for previewing
+                        layouts and visual mockups. Lorem Ipsum Generator.
+                      </p>
+                      <div class="row">
+                        <div class="col-6">
+                          <img src="./asset/imgs/anhbg.jpg" alt="" />
+                        </div>
+                        <div class="col-6">
+                          <img src="./asset/imgs/anhbg.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="itemTimeline">
+                    <div>
+                        <h3>Yên Bản</h3>
+                        <p>
+                          Lorem ipsum is placeholder text commonly used in the
+                          graphic, print, and publishing industries for previewing
+                          layouts and visual mockups. Lorem Ipsum Generator.
+                        </p>
+                        <div>
+                          <img src="./asset/imgs/anhbg.jpg" alt="" />
+                        </div>
+                    </div>
+                  </li>
+                  <li class="itemTimeline">
+                    <div>
+                        <h3>Yên Bản</h3>
+                        <p>
+                          Lorem ipsum is placeholder text commonly used in the
+                          graphic, print, and publishing industries for previewing
+                          layouts and visual mockups. Lorem Ipsum Generator.
+                        </p>
+                        <div class="row">
+                          <div class="col-12">
+                            <img src="./asset/imgs/anhbg.jpg" alt="" />
+                          </div>
+                          <div class="col-6">
+                            <img src="./asset/imgs/anhbg.jpg" alt="" />
+                          </div>
+                          <div class="col-6">
+                            <img src="./asset/imgs/anhbg.jpg" alt="" />
+                          </div>
+                        </div>
+                    </div>
+
+                  </li>
+                </ul>
               </div>
-              <div class="itemInfo">
-                <div class="wrapMapIcMarked">
-                  <div class="circle-marked"></div>
-                </div>
-                <div class="imgSm">
-                  <img src="./asset/imgs/anhbg.jpg" alt="" />
-                </div>
-                <h6>Thung Lung Ha Giang</h6>
-              </div>
-              <div class="itemInfo">
-                <div class="imgSm">
-                  <img src="./asset/imgs/anhbg.jpg" alt="" />
-                </div>
-                <h6>Thung Lung Ha Giang</h6>
-                <div class="wrapMapIcMarked">
-                  <div class="circle-marked"></div>
-                </div>
-              </div>
-              <div class="itemInfo">
-                <div class="imgSm">
-                  <img src="./asset/imgs/anhbg.jpg" alt="" />
-                </div>
-                <h6>Thung Lung Ha Giang</h6>
-                <div class="wrapMapIcMarked">
-                  <div class="circle-marked"></div>
-                </div>
-              </div>
-              <div class="itemInfo">
-                <div class="wrapMapIcMarked">
-                  <div class="circle-marked"></div>
-                </div>
-                <div class="imgSm">
-                  <img src="./asset/imgs/anhbg.jpg" alt="" />
-                </div>
-                <h6>Thung Lung Ha Giang</h6>
-              </div>
-            </div>
-            <div class="contentClearDetail">
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged.
-              </p>
-              <div class="container">
-                <div class="bannerBigDetail">
-                  <div class="itemBannerNConner">
-                    <span class="contentBannerNConner">
-                      <span class="activeHoverNavItem clip0">
-                        <svg
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
-                          x="0px"
-                          y="0px"
-                          fill="#fff"
-                          viewBox="0 0 15.7 30"
-                          style="enable-background: new 0 0 15.7 30"
-                          xml:space="preserve"
-                          class="mkdf-active-hover-left"
-                        >
-                          <polygon
-                            class="st0"
-                            points="2.6,1 0.7,3.3 2,5.8 2.3,7.6 2.9,8.7 4.4,10.5 3.9,10.8 4.4,11.9 4.4,12.8 4.1,13.8 3.3,14.7 3.9,15.8 4.4,16.8 4,17.5 3.5,18.1 2.2,20.2 3.4,21.5 4.2,24.1 3.4,25.4 2.5,27.4 2.5,27.8 3.2,28.3 4.1,28.5 4.9,29 14.8,29 14.8,1 "
-                          ></polygon>
-                        </svg>
-                        <span class="ver-mid"></span>
-                        <svg
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
-                          x="0px"
-                          y="0px"
-                          fill="#fff"
-                          viewBox="0 0 13.3 30"
-                          style="enable-background: new 0 0 13.3 30"
-                          xml:space="preserve"
-                          class="mkdf-active-hover-right"
-                        >
-                          <polygon
-                            class="st0"
-                            points="10,1 10.2,2.1 10.6,2.9 10.6,3.3 10.8,3.7 10.8,4.3 11,5 11,5.7 11,6.3 10.5,6.7 10.8,7.3 11,7.8 11.6,8.3 11.6,8.6 11.5,8.9 11.6,9.9 11.6,10.5 12.4,11.6 12.1,12 12.4,12.2 11.8,12.8 11.4,13.5 11.6,13.7 11.9,13.7 12,13.9 11.5,15.1 10.8,16 9.1,17.7 9.7,18.2 9.3,19 9.7,19.8 9.6,20.6 9.7,21.5 9.6,21.9 9.6,22.3 10.1,22.8 9.6,23.6 9.7,24 9.7,24.2 9.9,24.4 9.5,24.7 9.3,25.4 9.3,25.9 8.8,26.2 8.5,27.1 8.8,27.8 9.4,28.6 7.8,29 0.9,29 0.9,1 "
-                          ></polygon>
-                        </svg>
-                      </span>
-                      <span class="item-out">
-                        <span>Ha Giang - Thai An - Du Bang</span>
-                        <span>
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy
-                        </span>
-                      </span>
-                    </span>
-                  </div>
+              <div class="row">
+                <div class="col-12 text-center">
+                  <h4>What To Expect On Day 1</h4>
+                  <p>
+                    On the first night of the loop you’ll be sleeping in the
+                    village of the H’mong people, allowing you to experience
+                    first hand the daily life of the locals. Although you won’t
+                    be eating at a fancy fine dining restaurant, the villagers
+                    will prepare authentic local specials just for you. In order
+                    to welcome you to their village, the villagers use fresh
+                    vegetables from the garden and domestic chickens to mark
+                    this special occasion. You can expect a warm meal, friendly
+                    locals and a a cozy environment to rest your head after a
+                    long day on the Ha Giang Loop.
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
-          <div id="day3">
-            <h4 class="itemBannerNConner">
-              <span class="contentBannerNConner">
-                <span class="activeHoverNavItem clip0">
-                  <svg
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px"
-                    y="0px"
-                    fill="#fff"
-                    viewBox="0 0 15.7 30"
-                    style="enable-background: new 0 0 15.7 30"
-                    xml:space="preserve"
-                    class="mkdf-active-hover-left"
-                  >
-                    <polygon
-                      class="st0"
-                      points="2.6,1 0.7,3.3 2,5.8 2.3,7.6 2.9,8.7 4.4,10.5 3.9,10.8 4.4,11.9 4.4,12.8 4.1,13.8 3.3,14.7 3.9,15.8 4.4,16.8 4,17.5 3.5,18.1 2.2,20.2 3.4,21.5 4.2,24.1 3.4,25.4 2.5,27.4 2.5,27.8 3.2,28.3 4.1,28.5 4.9,29 14.8,29 14.8,1 "
-                    ></polygon>
-                  </svg>
-                  <span class="ver-mid"></span>
-                  <svg
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px"
-                    y="0px"
-                    fill="#fff"
-                    viewBox="0 0 13.3 30"
-                    style="enable-background: new 0 0 13.3 30"
-                    xml:space="preserve"
-                    class="mkdf-active-hover-right"
-                  >
-                    <polygon
-                      class="st0"
-                      points="10,1 10.2,2.1 10.6,2.9 10.6,3.3 10.8,3.7 10.8,4.3 11,5 11,5.7 11,6.3 10.5,6.7 10.8,7.3 11,7.8 11.6,8.3 11.6,8.6 11.5,8.9 11.6,9.9 11.6,10.5 12.4,11.6 12.1,12 12.4,12.2 11.8,12.8 11.4,13.5 11.6,13.7 11.9,13.7 12,13.9 11.5,15.1 10.8,16 9.1,17.7 9.7,18.2 9.3,19 9.7,19.8 9.6,20.6 9.7,21.5 9.6,21.9 9.6,22.3 10.1,22.8 9.6,23.6 9.7,24 9.7,24.2 9.9,24.4 9.5,24.7 9.3,25.4 9.3,25.9 8.8,26.2 8.5,27.1 8.8,27.8 9.4,28.6 7.8,29 0.9,29 0.9,1 "
-                    ></polygon>
-                  </svg>
+            <div id="day2of4">
+              <h4 class="itemBannerNConner">
+                <span class="contentBannerNConner">
+                  <span class="activeHoverNavItem clip0">
+                    <svg
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      fill="#fff"
+                      viewBox="0 0 15.7 30"
+                      style="enable-background: new 0 0 15.7 30"
+                      xml:space="preserve"
+                      class="mkdf-active-hover-left"
+                    >
+                      <polygon
+                        class="st0"
+                        points="2.6,1 0.7,3.3 2,5.8 2.3,7.6 2.9,8.7 4.4,10.5 3.9,10.8 4.4,11.9 4.4,12.8 4.1,13.8 3.3,14.7 3.9,15.8 4.4,16.8 4,17.5 3.5,18.1 2.2,20.2 3.4,21.5 4.2,24.1 3.4,25.4 2.5,27.4 2.5,27.8 3.2,28.3 4.1,28.5 4.9,29 14.8,29 14.8,1 "
+                      ></polygon>
+                    </svg>
+                    <span class="ver-mid"></span>
+                    <svg
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      fill="#fff"
+                      viewBox="0 0 13.3 30"
+                      style="enable-background: new 0 0 13.3 30"
+                      xml:space="preserve"
+                      class="mkdf-active-hover-right"
+                    >
+                      <polygon
+                        class="st0"
+                        points="10,1 10.2,2.1 10.6,2.9 10.6,3.3 10.8,3.7 10.8,4.3 11,5 11,5.7 11,6.3 10.5,6.7 10.8,7.3 11,7.8 11.6,8.3 11.6,8.6 11.5,8.9 11.6,9.9 11.6,10.5 12.4,11.6 12.1,12 12.4,12.2 11.8,12.8 11.4,13.5 11.6,13.7 11.9,13.7 12,13.9 11.5,15.1 10.8,16 9.1,17.7 9.7,18.2 9.3,19 9.7,19.8 9.6,20.6 9.7,21.5 9.6,21.9 9.6,22.3 10.1,22.8 9.6,23.6 9.7,24 9.7,24.2 9.9,24.4 9.5,24.7 9.3,25.4 9.3,25.9 8.8,26.2 8.5,27.1 8.8,27.8 9.4,28.6 7.8,29 0.9,29 0.9,1 "
+                      ></polygon>
+                    </svg>
+                  </span>
+                  <span class="item-out">
+                    <span>Day 2: Ha Giang - Thai An - Du Bang (120km) </span>
+                  </span>
                 </span>
-                <span class="item-out">
-                  <span>Day 3: Ha Giang - Thai An - Du Bang (120km) </span>
-                </span>
-              </span>
-            </h4>
-            <div class="contentDetail">
-              <div class="itemInfo">
-                <div class="imgSm">
-                  <img src="./asset/imgs/anhbg.jpg" alt="" />
-                </div>
-                <h6>Thung Lung Ha Giang</h6>
-                <div class="wrapMapIcMarked">
-                  <div class="circle-marked"></div>
-                </div>
+              </h4>
+              <div class="timelineWrap">
+                <ul class="timeLineA">
+                  <li class="itemTimeline">
+                    <div>
+                      <h3>Yên Bản</h3>
+                      <p>
+                        Lorem ipsum is placeholder text commonly used in the
+                        graphic, print, and publishing industries for previewing
+                        layouts and visual mockups. Lorem Ipsum Generator.
+                      </p>
+                      <div class="row">
+                        <div class="col-6">
+                          <img src="./asset/imgs/anhbg.jpg" alt="" />
+                        </div>
+                        <div class="col-6">
+                          <img src="./asset/imgs/anhbg.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="itemTimeline">
+                    <div>
+                        <h3>Yên Bản</h3>
+                        <p>
+                          Lorem ipsum is placeholder text commonly used in the
+                          graphic, print, and publishing industries for previewing
+                          layouts and visual mockups. Lorem Ipsum Generator.
+                        </p>
+                        <div>
+                          <img src="./asset/imgs/anhbg.jpg" alt="" />
+                        </div>
+                    </div>
+                  </li>
+                  <li class="itemTimeline">
+                    <div>
+                        <h3>Yên Bản</h3>
+                        <p>
+                          Lorem ipsum is placeholder text commonly used in the
+                          graphic, print, and publishing industries for previewing
+                          layouts and visual mockups. Lorem Ipsum Generator.
+                        </p>
+                        <div class="row">
+                          <div class="col-12">
+                            <img src="./asset/imgs/anhbg.jpg" alt="" />
+                          </div>
+                          <div class="col-6">
+                            <img src="./asset/imgs/anhbg.jpg" alt="" />
+                          </div>
+                          <div class="col-6">
+                            <img src="./asset/imgs/anhbg.jpg" alt="" />
+                          </div>
+                        </div>
+                    </div>
+
+                  </li>
+                </ul>
               </div>
-              <div class="itemInfo">
-                <div class="wrapMapIcMarked">
-                  <div class="circle-marked"></div>
-                </div>
-                <div class="imgSm">
-                  <img src="./asset/imgs/anhbg.jpg" alt="" />
-                </div>
-                <h6>Thung Lung Ha Giang</h6>
-              </div>
-              <div class="itemInfo">
-                <div class="imgSm">
-                  <img src="./asset/imgs/anhbg.jpg" alt="" />
-                </div>
-                <h6>Thung Lung Ha Giang</h6>
-                <div class="wrapMapIcMarked">
-                  <div class="circle-marked"></div>
-                </div>
-              </div>
-              <div class="itemInfo">
-                <div class="imgSm">
-                  <img src="./asset/imgs/anhbg.jpg" alt="" />
-                </div>
-                <h6>Thung Lung Ha Giang</h6>
-                <div class="wrapMapIcMarked">
-                  <div class="circle-marked"></div>
-                </div>
-              </div>
-              <div class="itemInfo">
-                <div class="wrapMapIcMarked">
-                  <div class="circle-marked"></div>
-                </div>
-                <div class="imgSm">
-                  <img src="./asset/imgs/anhbg.jpg" alt="" />
-                </div>
-                <h6>Thung Lung Ha Giang</h6>
-              </div>
-            </div>
-            <div class="contentClearDetail">
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged.
-              </p>
-              <div class="container">
-                <div class="bannerBigDetail">
-                  <div class="itemBannerNConner">
-                    <span class="contentBannerNConner">
-                      <span class="activeHoverNavItem clip0">
-                        <svg
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
-                          x="0px"
-                          y="0px"
-                          fill="#fff"
-                          viewBox="0 0 15.7 30"
-                          style="enable-background: new 0 0 15.7 30"
-                          xml:space="preserve"
-                          class="mkdf-active-hover-left"
-                        >
-                          <polygon
-                            class="st0"
-                            points="2.6,1 0.7,3.3 2,5.8 2.3,7.6 2.9,8.7 4.4,10.5 3.9,10.8 4.4,11.9 4.4,12.8 4.1,13.8 3.3,14.7 3.9,15.8 4.4,16.8 4,17.5 3.5,18.1 2.2,20.2 3.4,21.5 4.2,24.1 3.4,25.4 2.5,27.4 2.5,27.8 3.2,28.3 4.1,28.5 4.9,29 14.8,29 14.8,1 "
-                          ></polygon>
-                        </svg>
-                        <span class="ver-mid"></span>
-                        <svg
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
-                          x="0px"
-                          y="0px"
-                          fill="#fff"
-                          viewBox="0 0 13.3 30"
-                          style="enable-background: new 0 0 13.3 30"
-                          xml:space="preserve"
-                          class="mkdf-active-hover-right"
-                        >
-                          <polygon
-                            class="st0"
-                            points="10,1 10.2,2.1 10.6,2.9 10.6,3.3 10.8,3.7 10.8,4.3 11,5 11,5.7 11,6.3 10.5,6.7 10.8,7.3 11,7.8 11.6,8.3 11.6,8.6 11.5,8.9 11.6,9.9 11.6,10.5 12.4,11.6 12.1,12 12.4,12.2 11.8,12.8 11.4,13.5 11.6,13.7 11.9,13.7 12,13.9 11.5,15.1 10.8,16 9.1,17.7 9.7,18.2 9.3,19 9.7,19.8 9.6,20.6 9.7,21.5 9.6,21.9 9.6,22.3 10.1,22.8 9.6,23.6 9.7,24 9.7,24.2 9.9,24.4 9.5,24.7 9.3,25.4 9.3,25.9 8.8,26.2 8.5,27.1 8.8,27.8 9.4,28.6 7.8,29 0.9,29 0.9,1 "
-                          ></polygon>
-                        </svg>
-                      </span>
-                      <span class="item-out">
-                        <span>Ha Giang - Thai An - Du Bang</span>
-                        <span>
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy
-                        </span>
-                      </span>
-                    </span>
-                  </div>
+              <div class="row">
+                <div class="col-12 text-center">
+                  <h4>What To Expect On Day 1</h4>
+                  <p>
+                    On the first night of the loop you’ll be sleeping in the
+                    village of the H’mong people, allowing you to experience
+                    first hand the daily life of the locals. Although you won’t
+                    be eating at a fancy fine dining restaurant, the villagers
+                    will prepare authentic local specials just for you. In order
+                    to welcome you to their village, the villagers use fresh
+                    vegetables from the garden and domestic chickens to mark
+                    this special occasion. You can expect a warm meal, friendly
+                    locals and a a cozy environment to rest your head after a
+                    long day on the Ha Giang Loop.
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
-          <div id="day4">
-            <h4 class="itemBannerNConner">
-              <span class="contentBannerNConner">
-                <span class="activeHoverNavItem clip0">
-                  <svg
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px"
-                    y="0px"
-                    fill="#fff"
-                    viewBox="0 0 15.7 30"
-                    style="enable-background: new 0 0 15.7 30"
-                    xml:space="preserve"
-                    class="mkdf-active-hover-left"
-                  >
-                    <polygon
-                      class="st0"
-                      points="2.6,1 0.7,3.3 2,5.8 2.3,7.6 2.9,8.7 4.4,10.5 3.9,10.8 4.4,11.9 4.4,12.8 4.1,13.8 3.3,14.7 3.9,15.8 4.4,16.8 4,17.5 3.5,18.1 2.2,20.2 3.4,21.5 4.2,24.1 3.4,25.4 2.5,27.4 2.5,27.8 3.2,28.3 4.1,28.5 4.9,29 14.8,29 14.8,1 "
-                    ></polygon>
-                  </svg>
-                  <span class="ver-mid"></span>
-                  <svg
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px"
-                    y="0px"
-                    fill="#fff"
-                    viewBox="0 0 13.3 30"
-                    style="enable-background: new 0 0 13.3 30"
-                    xml:space="preserve"
-                    class="mkdf-active-hover-right"
-                  >
-                    <polygon
-                      class="st0"
-                      points="10,1 10.2,2.1 10.6,2.9 10.6,3.3 10.8,3.7 10.8,4.3 11,5 11,5.7 11,6.3 10.5,6.7 10.8,7.3 11,7.8 11.6,8.3 11.6,8.6 11.5,8.9 11.6,9.9 11.6,10.5 12.4,11.6 12.1,12 12.4,12.2 11.8,12.8 11.4,13.5 11.6,13.7 11.9,13.7 12,13.9 11.5,15.1 10.8,16 9.1,17.7 9.7,18.2 9.3,19 9.7,19.8 9.6,20.6 9.7,21.5 9.6,21.9 9.6,22.3 10.1,22.8 9.6,23.6 9.7,24 9.7,24.2 9.9,24.4 9.5,24.7 9.3,25.4 9.3,25.9 8.8,26.2 8.5,27.1 8.8,27.8 9.4,28.6 7.8,29 0.9,29 0.9,1 "
-                    ></polygon>
-                  </svg>
+            <div id="day3of4">
+              <h4 class="itemBannerNConner">
+                <span class="contentBannerNConner">
+                  <span class="activeHoverNavItem clip0">
+                    <svg
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      fill="#fff"
+                      viewBox="0 0 15.7 30"
+                      style="enable-background: new 0 0 15.7 30"
+                      xml:space="preserve"
+                      class="mkdf-active-hover-left"
+                    >
+                      <polygon
+                        class="st0"
+                        points="2.6,1 0.7,3.3 2,5.8 2.3,7.6 2.9,8.7 4.4,10.5 3.9,10.8 4.4,11.9 4.4,12.8 4.1,13.8 3.3,14.7 3.9,15.8 4.4,16.8 4,17.5 3.5,18.1 2.2,20.2 3.4,21.5 4.2,24.1 3.4,25.4 2.5,27.4 2.5,27.8 3.2,28.3 4.1,28.5 4.9,29 14.8,29 14.8,1 "
+                      ></polygon>
+                    </svg>
+                    <span class="ver-mid"></span>
+                    <svg
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      fill="#fff"
+                      viewBox="0 0 13.3 30"
+                      style="enable-background: new 0 0 13.3 30"
+                      xml:space="preserve"
+                      class="mkdf-active-hover-right"
+                    >
+                      <polygon
+                        class="st0"
+                        points="10,1 10.2,2.1 10.6,2.9 10.6,3.3 10.8,3.7 10.8,4.3 11,5 11,5.7 11,6.3 10.5,6.7 10.8,7.3 11,7.8 11.6,8.3 11.6,8.6 11.5,8.9 11.6,9.9 11.6,10.5 12.4,11.6 12.1,12 12.4,12.2 11.8,12.8 11.4,13.5 11.6,13.7 11.9,13.7 12,13.9 11.5,15.1 10.8,16 9.1,17.7 9.7,18.2 9.3,19 9.7,19.8 9.6,20.6 9.7,21.5 9.6,21.9 9.6,22.3 10.1,22.8 9.6,23.6 9.7,24 9.7,24.2 9.9,24.4 9.5,24.7 9.3,25.4 9.3,25.9 8.8,26.2 8.5,27.1 8.8,27.8 9.4,28.6 7.8,29 0.9,29 0.9,1 "
+                      ></polygon>
+                    </svg>
+                  </span>
+                  <span class="item-out">
+                    <span>Day 3: Ha Giang - Thai An - Du Bang (120km) </span>
+                  </span>
                 </span>
-                <span class="item-out">
-                  <span>Day 4: Ha Giang - Thai An - Du Bang (120km) </span>
-                </span>
-              </span>
-            </h4>
-            <div class="contentDetail">
-              <div class="itemInfo">
-                <div class="imgSm">
-                  <img src="./asset/imgs/anhbg.jpg" alt="" />
-                </div>
-                <h6>Thung Lung Ha Giang</h6>
-                <div class="wrapMapIcMarked">
-                  <div class="circle-marked"></div>
-                </div>
+              </h4>
+              <div class="timelineWrap">
+                <ul class="timeLineA">
+                  <li class="itemTimeline">
+                    <div>
+                      <h3>Yên Bản</h3>
+                      <p>
+                        Lorem ipsum is placeholder text commonly used in the
+                        graphic, print, and publishing industries for previewing
+                        layouts and visual mockups. Lorem Ipsum Generator.
+                      </p>
+                      <div class="row">
+                        <div class="col-6">
+                          <img src="./asset/imgs/anhbg.jpg" alt="" />
+                        </div>
+                        <div class="col-6">
+                          <img src="./asset/imgs/anhbg.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="itemTimeline">
+                    <div>
+                        <h3>Yên Bản</h3>
+                        <p>
+                          Lorem ipsum is placeholder text commonly used in the
+                          graphic, print, and publishing industries for previewing
+                          layouts and visual mockups. Lorem Ipsum Generator.
+                        </p>
+                        <div>
+                          <img src="./asset/imgs/anhbg.jpg" alt="" />
+                        </div>
+                    </div>
+                  </li>
+                  <li class="itemTimeline">
+                    <div>
+                        <h3>Yên Bản</h3>
+                        <p>
+                          Lorem ipsum is placeholder text commonly used in the
+                          graphic, print, and publishing industries for previewing
+                          layouts and visual mockups. Lorem Ipsum Generator.
+                        </p>
+                        <div class="row">
+                          <div class="col-12">
+                            <img src="./asset/imgs/anhbg.jpg" alt="" />
+                          </div>
+                          <div class="col-6">
+                            <img src="./asset/imgs/anhbg.jpg" alt="" />
+                          </div>
+                          <div class="col-6">
+                            <img src="./asset/imgs/anhbg.jpg" alt="" />
+                          </div>
+                        </div>
+                    </div>
+
+                  </li>
+                </ul>
               </div>
-              <div class="itemInfo">
-                <div class="wrapMapIcMarked">
-                  <div class="circle-marked"></div>
+              <div class="row">
+                <div class="col-12 text-center">
+                  <h4>What To Expect On Day 1</h4>
+                  <p>
+                    On the first night of the loop you’ll be sleeping in the
+                    village of the H’mong people, allowing you to experience
+                    first hand the daily life of the locals. Although you won’t
+                    be eating at a fancy fine dining restaurant, the villagers
+                    will prepare authentic local specials just for you. In order
+                    to welcome you to their village, the villagers use fresh
+                    vegetables from the garden and domestic chickens to mark
+                    this special occasion. You can expect a warm meal, friendly
+                    locals and a a cozy environment to rest your head after a
+                    long day on the Ha Giang Loop.
+                  </p>
                 </div>
-                <div class="imgSm">
-                  <img src="./asset/imgs/anhbg.jpg" alt="" />
-                </div>
-                <h6>Thung Lung Ha Giang</h6>
-              </div>
-              <div class="itemInfo">
-                <div class="imgSm">
-                  <img src="./asset/imgs/anhbg.jpg" alt="" />
-                </div>
-                <h6>Thung Lung Ha Giang</h6>
-                <div class="wrapMapIcMarked">
-                  <div class="circle-marked"></div>
-                </div>
-              </div>
-              <div class="itemInfo">
-                <div class="imgSm">
-                  <img src="./asset/imgs/anhbg.jpg" alt="" />
-                </div>
-                <h6>Thung Lung Ha Giang</h6>
-                <div class="wrapMapIcMarked">
-                  <div class="circle-marked"></div>
-                </div>
-              </div>
-              <div class="itemInfo">
-                <div class="wrapMapIcMarked">
-                  <div class="circle-marked"></div>
-                </div>
-                <div class="imgSm">
-                  <img src="./asset/imgs/anhbg.jpg" alt="" />
-                </div>
-                <h6>Thung Lung Ha Giang</h6>
               </div>
             </div>
-            <div class="contentClearDetail">
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged.
-              </p>
-              <div class="container">
-                <div class="bannerBigDetail">
-                  <div class="itemBannerNConner">
-                    <span class="contentBannerNConner">
-                      <span class="activeHoverNavItem clip0">
-                        <svg
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
-                          x="0px"
-                          y="0px"
-                          fill="#fff"
-                          viewBox="0 0 15.7 30"
-                          style="enable-background: new 0 0 15.7 30"
-                          xml:space="preserve"
-                          class="mkdf-active-hover-left"
-                        >
-                          <polygon
-                            class="st0"
-                            points="2.6,1 0.7,3.3 2,5.8 2.3,7.6 2.9,8.7 4.4,10.5 3.9,10.8 4.4,11.9 4.4,12.8 4.1,13.8 3.3,14.7 3.9,15.8 4.4,16.8 4,17.5 3.5,18.1 2.2,20.2 3.4,21.5 4.2,24.1 3.4,25.4 2.5,27.4 2.5,27.8 3.2,28.3 4.1,28.5 4.9,29 14.8,29 14.8,1 "
-                          ></polygon>
-                        </svg>
-                        <span class="ver-mid"></span>
-                        <svg
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
-                          x="0px"
-                          y="0px"
-                          fill="#fff"
-                          viewBox="0 0 13.3 30"
-                          style="enable-background: new 0 0 13.3 30"
-                          xml:space="preserve"
-                          class="mkdf-active-hover-right"
-                        >
-                          <polygon
-                            class="st0"
-                            points="10,1 10.2,2.1 10.6,2.9 10.6,3.3 10.8,3.7 10.8,4.3 11,5 11,5.7 11,6.3 10.5,6.7 10.8,7.3 11,7.8 11.6,8.3 11.6,8.6 11.5,8.9 11.6,9.9 11.6,10.5 12.4,11.6 12.1,12 12.4,12.2 11.8,12.8 11.4,13.5 11.6,13.7 11.9,13.7 12,13.9 11.5,15.1 10.8,16 9.1,17.7 9.7,18.2 9.3,19 9.7,19.8 9.6,20.6 9.7,21.5 9.6,21.9 9.6,22.3 10.1,22.8 9.6,23.6 9.7,24 9.7,24.2 9.9,24.4 9.5,24.7 9.3,25.4 9.3,25.9 8.8,26.2 8.5,27.1 8.8,27.8 9.4,28.6 7.8,29 0.9,29 0.9,1 "
-                          ></polygon>
-                        </svg>
-                      </span>
-                      <span class="item-out">
-                        <span>Ha Giang - Thai An - Du Bang</span>
-                        <span>
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy
-                        </span>
-                      </span>
-                    </span>
-                  </div>
+            <div id="day4of4">
+              <h4 class="itemBannerNConner">
+                <span class="contentBannerNConner">
+                  <span class="activeHoverNavItem clip0">
+                    <svg
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      fill="#fff"
+                      viewBox="0 0 15.7 30"
+                      style="enable-background: new 0 0 15.7 30"
+                      xml:space="preserve"
+                      class="mkdf-active-hover-left"
+                    >
+                      <polygon
+                        class="st0"
+                        points="2.6,1 0.7,3.3 2,5.8 2.3,7.6 2.9,8.7 4.4,10.5 3.9,10.8 4.4,11.9 4.4,12.8 4.1,13.8 3.3,14.7 3.9,15.8 4.4,16.8 4,17.5 3.5,18.1 2.2,20.2 3.4,21.5 4.2,24.1 3.4,25.4 2.5,27.4 2.5,27.8 3.2,28.3 4.1,28.5 4.9,29 14.8,29 14.8,1 "
+                      ></polygon>
+                    </svg>
+                    <span class="ver-mid"></span>
+                    <svg
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      fill="#fff"
+                      viewBox="0 0 13.3 30"
+                      style="enable-background: new 0 0 13.3 30"
+                      xml:space="preserve"
+                      class="mkdf-active-hover-right"
+                    >
+                      <polygon
+                        class="st0"
+                        points="10,1 10.2,2.1 10.6,2.9 10.6,3.3 10.8,3.7 10.8,4.3 11,5 11,5.7 11,6.3 10.5,6.7 10.8,7.3 11,7.8 11.6,8.3 11.6,8.6 11.5,8.9 11.6,9.9 11.6,10.5 12.4,11.6 12.1,12 12.4,12.2 11.8,12.8 11.4,13.5 11.6,13.7 11.9,13.7 12,13.9 11.5,15.1 10.8,16 9.1,17.7 9.7,18.2 9.3,19 9.7,19.8 9.6,20.6 9.7,21.5 9.6,21.9 9.6,22.3 10.1,22.8 9.6,23.6 9.7,24 9.7,24.2 9.9,24.4 9.5,24.7 9.3,25.4 9.3,25.9 8.8,26.2 8.5,27.1 8.8,27.8 9.4,28.6 7.8,29 0.9,29 0.9,1 "
+                      ></polygon>
+                    </svg>
+                  </span>
+                  <span class="item-out">
+                    <span>Day 4: Ha Giang - Thai An - Du Bang (120km) </span>
+                  </span>
+                </span>
+              </h4>
+              <div class="timelineWrap">
+                <ul class="timeLineA">
+                  <li class="itemTimeline">
+                    <div>
+                      <h3>Yên Bản</h3>
+                      <p>
+                        Lorem ipsum is placeholder text commonly used in the
+                        graphic, print, and publishing industries for previewing
+                        layouts and visual mockups. Lorem Ipsum Generator.
+                      </p>
+                      <div class="row">
+                        <div class="col-6">
+                          <img src="./asset/imgs/anhbg.jpg" alt="" />
+                        </div>
+                        <div class="col-6">
+                          <img src="./asset/imgs/anhbg.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="itemTimeline">
+                    <div>
+                        <h3>Yên Bản</h3>
+                        <p>
+                          Lorem ipsum is placeholder text commonly used in the
+                          graphic, print, and publishing industries for previewing
+                          layouts and visual mockups. Lorem Ipsum Generator.
+                        </p>
+                        <div>
+                          <img src="./asset/imgs/anhbg.jpg" alt="" />
+                        </div>
+                    </div>
+                  </li>
+                  <li class="itemTimeline">
+                    <div>
+                        <h3>Yên Bản</h3>
+                        <p>
+                          Lorem ipsum is placeholder text commonly used in the
+                          graphic, print, and publishing industries for previewing
+                          layouts and visual mockups. Lorem Ipsum Generator.
+                        </p>
+                        <div class="row">
+                          <div class="col-12">
+                            <img src="./asset/imgs/anhbg.jpg" alt="" />
+                          </div>
+                          <div class="col-6">
+                            <img src="./asset/imgs/anhbg.jpg" alt="" />
+                          </div>
+                          <div class="col-6">
+                            <img src="./asset/imgs/anhbg.jpg" alt="" />
+                          </div>
+                        </div>
+                    </div>
+
+                  </li>
+                </ul>
+              </div>
+              <div class="row">
+                <div class="col-12 text-center">
+                  <h4>What To Expect On Day 1</h4>
+                  <p>
+                    On the first night of the loop you’ll be sleeping in the
+                    village of the H’mong people, allowing you to experience
+                    first hand the daily life of the locals. Although you won’t
+                    be eating at a fancy fine dining restaurant, the villagers
+                    will prepare authentic local specials just for you. In order
+                    to welcome you to their village, the villagers use fresh
+                    vegetables from the garden and domestic chickens to mark
+                    this special occasion. You can expect a warm meal, friendly
+                    locals and a a cozy environment to rest your head after a
+                    long day on the Ha Giang Loop.
+                  </p>
                 </div>
               </div>
             </div>
@@ -1206,29 +1447,6 @@
               </li>
               <li class="tabLink">
                 <a href="#tab6">How much luggage can i take ?</a>
-              </li>
-            </div>
-            <div>
-              <li class="tabLink">
-                <a href="#tab7">Can i drive my own ?</a>
-              </li>
-              <li class="tabLink">
-                <a href="#tab8">Where i meet the trip ?</a>
-              </li>
-              <li class="tabLink">
-                <a href="#tab9">Where i do stay ?</a>
-              </li>
-              <li class="tabLink">
-                <a href="#tab10">Where i do eat ?</a>
-              </li>
-              <li class="tabLink">
-                <a href="#tab11">How fit i do have to be ?</a>
-              </li>
-              <li class="tabLink">
-                <a href="#tab12">Promotion group booking</a>
-              </li>
-              <li class="tabLink">
-                <a href="#tab13">Happy ending</a>
               </li>
             </div>
           </ul>
@@ -1353,78 +1571,611 @@
         </div>
       </section>
       <section class="news">
-        <div class="swiper news-swiper-container">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div>
-                <img src="./asset/imgs/anhgbb.jpg" alt="bg1" />
+        <h2 class="titleHeadForEachP">All About <span>Ha giang</span></h2>
+        <div class="slideBlogs">
+          <div class="swiper news-swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div>
+                  <img src="./asset/imgs/anhgbb.jpg" alt="bg1" />
+                </div>
+                <div class="txt">
+                  <ul class="info">
+                    <li>
+                      <span><i class="far fa-calendar"></i></span>
+                      <span>October 8, 2019</span>
+                    </li>
+                    <li>
+                      <span><i class="fas fa-pencil-alt"></i></span>
+                      <span>Loren Mike</span>
+                    </li>
+                  </ul>
+                  <h3>Lorum is spem liskoo spem liskoo</h3>
+                  <p>
+                    Lorum is spem liskoo spem liskoo lorum is spem liskoo spem
+                    liskoo lorum is spem liskoo spem liskoo lorum is spem liskoo
+                    spem liskoo
+                  </p>
+                </div>
               </div>
-              <div class="txt">
-                <ul class="info">
-                  <li>
-                    <span><i class="far fa-calendar"></i></span>
-                    <span>October 8, 2019</span>
-                  </li>
-                  <li>
-                    <span><i class="fas fa-pencil-alt"></i></span>
-                    <span>Loren Mike</span>
-                  </li>
-                </ul>
-                <h3>Lorum is spem liskoo spem liskoo</h3>
+              <div class="swiper-slide">
+                <div>
+                  <img src="./asset/imgs/abga.jpg" alt="bg2" />
+                </div>
+                <div class="txt">
+                  <ul class="info">
+                    <li>
+                      <span><i class="far fa-calendar"></i></span>
+                      <span>October 8, 2019</span>
+                    </li>
+                    <li>
+                      <span><i class="fas fa-pencil-alt"></i></span>
+                      <span>Loren Mike</span>
+                    </li>
+                  </ul>
+                  <h3>Lorum is spem liskoo spem liskoo</h3>
+                  <p>
+                    Lorum is spem liskoo spem liskoo lorum is spem liskoo spem
+                    liskoo lorum is spem liskoo spem liskoo lorum is spem liskoo
+                    spem liskoo
+                  </p>
+                </div>
               </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="./asset/imgs/anhbgc.jpg" alt="bg3" />
+                </div>
+                <div class="txt">
+                  <ul class="info">
+                    <li>
+                      <span><i class="far fa-calendar"></i></span>
+                      <span>October 8, 2019</span>
+                    </li>
+                    <li>
+                      <span><i class="fas fa-pencil-alt"></i></span>
+                      <span>Loren Mike</span>
+                    </li>
+                  </ul>
+                  <h3>Lorum is spem liskoo spem liskoo</h3>
+                  <p>
+                    Lorum is spem liskoo spem liskoo lorum is spem liskoo spem
+                    liskoo lorum is spem liskoo spem liskoo lorum is spem liskoo
+                    spem liskoo
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="./asset/imgs/anhbgc.jpg" alt="bg3" />
+                </div>
+                <div class="txt">
+                  <ul class="info">
+                    <li>
+                      <span><i class="far fa-calendar"></i></span>
+                      <span>October 8, 2019</span>
+                    </li>
+                    <li>
+                      <span><i class="fas fa-pencil-alt"></i></span>
+                      <span>Loren Mike</span>
+                    </li>
+                  </ul>
+                  <h3>Lorum is spem liskoo spem liskoo</h3>
+                  <p>
+                    Lorum is spem liskoo spem liskoo lorum is spem liskoo spem
+                    liskoo lorum is spem liskoo spem liskoo lorum is spem liskoo
+                    spem liskoo
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="./asset/imgs/anhbgc.jpg" alt="bg3" />
+                </div>
+                <div class="txt">
+                  <ul class="info">
+                    <li>
+                      <span><i class="far fa-calendar"></i></span>
+                      <span>October 8, 2019</span>
+                    </li>
+                    <li>
+                      <span><i class="fas fa-pencil-alt"></i></span>
+                      <span>Loren Mike</span>
+                    </li>
+                  </ul>
+                  <h3>Lorum is spem liskoo spem liskoo</h3>
+                  <p>
+                    Lorum is spem liskoo spem liskoo lorum is spem liskoo spem
+                    liskoo lorum is spem liskoo spem liskoo lorum is spem liskoo
+                    spem liskoo
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="./asset/imgs/anhbgc.jpg" alt="bg3" />
+                </div>
+                <div class="txt">
+                  <ul class="info">
+                    <li>
+                      <span><i class="far fa-calendar"></i></span>
+                      <span>October 8, 2019</span>
+                    </li>
+                    <li>
+                      <span><i class="fas fa-pencil-alt"></i></span>
+                      <span>Loren Mike</span>
+                    </li>
+                  </ul>
+                  <h3>Lorum is spem liskoo spem liskoo</h3>
+                  <p>
+                    Lorum is spem liskoo spem liskoo lorum is spem liskoo spem
+                    liskoo lorum is spem liskoo spem liskoo lorum is spem liskoo
+                    spem liskoo
+                  </p>
+                </div>
+              </div>
+              ...
             </div>
-            <div class="swiper-slide">
-              <div>
-                <img src="./asset/imgs/abga.jpg" alt="bg2" />
-              </div>
-              <div class="txt">
-                <ul class="info">
-                  <li>
-                    <span><i class="far fa-calendar"></i></span>
-                    <span>October 8, 2019</span>
-                  </li>
-                  <li>
-                    <span><i class="fas fa-pencil-alt"></i></span>
-                    <span>Loren Mike</span>
-                  </li>
-                </ul>
-                <h3>Lorum is spem liskoo spem liskoo</h3>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <img src="./asset/imgs/anhbgc.jpg" alt="bg3" />
-              </div>
-              <div class="txt">
-                <ul class="info">
-                  <li>
-                    <span><i class="far fa-calendar"></i></span>
-                    <span>October 8, 2019</span>
-                  </li>
-                  <li>
-                    <span><i class="fas fa-pencil-alt"></i></span>
-                    <span>Loren Mike</span>
-                  </li>
-                </ul>
-                <h3>Lorum is spem liskoo spem liskoo</h3>
-              </div>
-            </div>
-            ...
-          </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
-          <!-- If we need navigation buttons -->
+            <!-- If we need navigation buttons -->
+
+            <!-- If we need scrollbar -->
+          </div>
           <div class="swiper-button-prev">
             <img src="./asset/imgs/icons8-left-arrow-50.png" alt="" />
           </div>
           <div class="swiper-button-next">
             <img src="./asset/imgs/icons8-right-arrow-50.png" alt="" />
           </div>
+        </div>
+        <div class="slidePhotosBlog">
+          <h4>Make Friendship That Might Just A LifeTime</h4>
+          <p>Lorem ipsum is placeholder text commonly</p>
+          <div class="swiper photosBlog-swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div>
+                  <img src="./asset/imgs/anhgbb.jpg" alt="bg1" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="./asset/imgs/abga.jpg" alt="bg2" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="./asset/imgs/anhbgc.jpg" alt="bg3" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="./asset/imgs/anhbgc.jpg" alt="bg3" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="./asset/imgs/anhbgc.jpg" alt="bg3" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="./asset/imgs/anhbgc.jpg" alt="bg3" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="./asset/imgs/anhbgc.jpg" alt="bg3" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="./asset/imgs/anhbgc.jpg" alt="bg3" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="./asset/imgs/anhbgc.jpg" alt="bg3" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="./asset/imgs/anhbgc.jpg" alt="bg3" />
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
 
-          <!-- If we need scrollbar -->
+            <!-- If we need navigation buttons -->
+
+            <!-- If we need scrollbar -->
+          </div>
+        </div>
+      </section>
+      <section class="tourPrices">
+        <h2 class="titleHeadForEachP">Tour price options</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="tour-option">
+                <!-- <div class="bannerTop">
+                  <h2>3 DAYS 2 NIGHTS</h2>
+                </div> -->
+                <div class="bannerImg">
+                  <img src="./asset/imgs/hagiangfooter.jpeg" alt="" />
+                </div>
+
+                <h2>3 DAYS 2 NIGHTS</h2>
+                <ul>
+                  <li>
+                    <p>SELF-RIDING (WITHOUT BUS TICKET)</p>
+                    <p>3.408.000₫</p>
+                  </li>
+                  <li>
+                    <p>SELF-RIDING (WITHOUT BUS TICKET)</p>
+                    <p>3.408.000₫</p>
+                  </li>
+                  <li>
+                    <p>SELF-RIDING (WITHOUT BUS TICKET)</p>
+                    <p>3.408.000₫</p>
+                  </li>
+                  <li>
+                    <p>SELF-RIDING (WITHOUT BUS TICKET)</p>
+                    <p>3.408.000₫</p>
+                  </li>
+                </ul>
+                <ul>
+                  <li>Follow the group with the local guide</li>
+                  <li></li>
+
+                  <li>
+                    New generation semi-automatic motor-bike* (can be upgraded
+                    with a small fee)
+                  </li>
+
+                  <li>2 breakfasts, 3 lunches, and 2 dinners</li>
+
+                  <li>
+                    2 nights in a beautiful homestay with local people house
+                  </li>
+
+                  <li>
+                    Tickets for sightseeing, tickets for Nho Que riverboat
+                  </li>
+
+                  <li>Gasoline cars</li>
+                </ul>
+
+                <span class="book-now popUpBtn">BOOK NOW</span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="tour-option">
+                <!-- <div class="bannerTop">
+                      <h2>3 DAYS 2 NIGHTS</h2>
+                    </div> -->
+                <div class="bannerImg">
+                  <img src="./asset/imgs/hagiangfooter.jpeg" alt="" />
+                </div>
+
+                <h2>4 DAYS 3 NIGHTS</h2>
+                <ul>
+                  <li>
+                    <p>SELF-RIDING (WITHOUT BUS TICKET)</p>
+                    <p>3.408.000₫</p>
+                  </li>
+                  <li>
+                    <p>SELF-RIDING (WITHOUT BUS TICKET)</p>
+                    <p>3.408.000₫</p>
+                  </li>
+                  <li>
+                    <p>SELF-RIDING (WITHOUT BUS TICKET)</p>
+                    <p>3.408.000₫</p>
+                  </li>
+                  <li>
+                    <p>SELF-RIDING (WITHOUT BUS TICKET)</p>
+                    <p>3.408.000₫</p>
+                  </li>
+                </ul>
+                <ul>
+                  <li>Follow the group with the local guide</li>
+                  <li></li>
+
+                  <li>
+                    New generation semi-automatic motor-bike* (can be upgraded
+                    with a small fee)
+                  </li>
+
+                  <li>2 breakfasts, 3 lunches, and 2 dinners</li>
+
+                  <li>
+                    2 nights in a beautiful homestay with local people house
+                  </li>
+
+                  <li>
+                    Tickets for sightseeing, tickets for Nho Que riverboat
+                  </li>
+
+                  <li>Gasoline cars</li>
+                </ul>
+
+                <span class="book-now popUpBtn">BOOK NOW</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="vehicles">
+          <h2>Accompanying vehicle rental service</h2>
+          <div class="KindVehicleBtn">
+            <span>Motorbike</span>
+          </div>
+          <div class="slideVehicle">
+            <div class="swiper vehicles-swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div>
+                    <div class="top">
+                      <h4>Manual bike suzuki HJ125cc</h4>
+                      <div clas="imgProduct">
+                        <img
+                          src="./asset/imgs/xezuki.png"
+                          alt="xezukihagiangtour"
+                        />
+                      </div>
+
+                      <p>350.000đ</p>
+                      <p>per day</p>
+                    </div>
+
+                    <div class="center">
+                      <p>
+                        <span style="color: #df6726"
+                          >Optional: Motorbike insurance 100.000vnd/day</span
+                        >
+                      </p>
+                    </div>
+
+                    <ul class="bottom">
+                      <li>
+                        <span
+                          ><ion-icon name="checkmark-circle"></ion-icon
+                        ></span>
+                        <span>Backpack rain cover</span>
+                      </li>
+                      <li>
+                        <span
+                          ><ion-icon name="checkmark-circle"></ion-icon
+                        ></span>
+                        <span>Elastric strap</span>
+                      </li>
+                      <li>
+                        <span
+                          ><ion-icon name="checkmark-circle"></ion-icon
+                        ></span>
+                        <span>Helmet</span>
+                      </li>
+                      <li>
+                        <span
+                          ><ion-icon name="checkmark-circle"></ion-icon
+                        ></span>
+                        <span>Map</span>
+                      </li>
+                      <li>
+                        <span
+                          ><ion-icon name="checkmark-circle"></ion-icon
+                        ></span>
+                        <span>Free Luggage store</span>
+                      </li>
+                    </ul>
+                    <div class="wrapbtnBookTourPrice">
+                      <a href="#">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <div class="top">
+                      <h4>Manual bike suzuki HJ125cc</h4>
+                      <div clas="imgProduct">
+                        <img
+                          src="./asset/imgs/xezuki.png"
+                          alt="xezukihagiangtour"
+                        />
+                      </div>
+
+                      <p>350.000đ</p>
+                      <p>per day</p>
+                    </div>
+
+                    <div class="center">
+                      <p>
+                        <span style="color: #df6726"
+                          >Optional: Motorbike insurance 100.000vnd/day</span
+                        >
+                      </p>
+                    </div>
+
+                    <ul class="bottom">
+                      <li>
+                        <span
+                          ><ion-icon name="checkmark-circle"></ion-icon
+                        ></span>
+                        <span>Backpack rain cover</span>
+                      </li>
+                      <li>
+                        <span
+                          ><ion-icon name="checkmark-circle"></ion-icon
+                        ></span>
+                        <span>Elastric strap</span>
+                      </li>
+                      <li>
+                        <span
+                          ><ion-icon name="checkmark-circle"></ion-icon
+                        ></span>
+                        <span>Helmet</span>
+                      </li>
+                      <li>
+                        <span
+                          ><ion-icon name="checkmark-circle"></ion-icon
+                        ></span>
+                        <span>Map</span>
+                      </li>
+                      <li>
+                        <span
+                          ><ion-icon name="checkmark-circle"></ion-icon
+                        ></span>
+                        <span>Free Luggage store</span>
+                      </li>
+                    </ul>
+                    <div class="wrapbtnBookTourPrice">
+                      <a href="#">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <div class="top">
+                      <h4>Manual bike suzuki HJ125cc</h4>
+                      <div clas="imgProduct">
+                        <img
+                          src="./asset/imgs/xezuki.png"
+                          alt="xezukihagiangtour"
+                        />
+                      </div>
+
+                      <p>350.000đ</p>
+                      <p>per day</p>
+                    </div>
+
+                    <div class="center">
+                      <p>
+                        <span style="color: #df6726"
+                          >Optional: Motorbike insurance 100.000vnd/day</span
+                        >
+                      </p>
+                    </div>
+
+                    <ul class="bottom">
+                      <li>
+                        <span
+                          ><ion-icon name="checkmark-circle"></ion-icon
+                        ></span>
+                        <span>Backpack rain cover</span>
+                      </li>
+                      <li>
+                        <span
+                          ><ion-icon name="checkmark-circle"></ion-icon
+                        ></span>
+                        <span>Elastric strap</span>
+                      </li>
+                      <li>
+                        <span
+                          ><ion-icon name="checkmark-circle"></ion-icon
+                        ></span>
+                        <span>Helmet</span>
+                      </li>
+                      <li>
+                        <span
+                          ><ion-icon name="checkmark-circle"></ion-icon
+                        ></span>
+                        <span>Map</span>
+                      </li>
+                      <li>
+                        <span
+                          ><ion-icon name="checkmark-circle"></ion-icon
+                        ></span>
+                        <span>Free Luggage store</span>
+                      </li>
+                    </ul>
+                    <div class="wrapbtnBookTourPrice">
+                      <a href="#">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <div class="top">
+                      <h4>Manual bike suzuki HJ125cc</h4>
+                      <div clas="imgProduct">
+                        <img
+                          src="./asset/imgs/xezuki.png"
+                          alt="xezukihagiangtour"
+                        />
+                      </div>
+
+                      <p>350.000đ</p>
+                      <p>per day</p>
+                    </div>
+
+                    <div class="center">
+                      <p>
+                        <span style="color: #df6726"
+                          >Optional: Motorbike insurance 100.000vnd/day</span
+                        >
+                      </p>
+                    </div>
+
+                    <ul class="bottom">
+                      <li>
+                        <span
+                          ><ion-icon name="checkmark-circle"></ion-icon
+                        ></span>
+                        <span>Backpack rain cover</span>
+                      </li>
+                      <li>
+                        <span
+                          ><ion-icon name="checkmark-circle"></ion-icon
+                        ></span>
+                        <span>Elastric strap</span>
+                      </li>
+                      <li>
+                        <span
+                          ><ion-icon name="checkmark-circle"></ion-icon
+                        ></span>
+                        <span>Helmet</span>
+                      </li>
+                      <li>
+                        <span
+                          ><ion-icon name="checkmark-circle"></ion-icon
+                        ></span>
+                        <span>Map</span>
+                      </li>
+                      <li>
+                        <span
+                          ><ion-icon name="checkmark-circle"></ion-icon
+                        ></span>
+                        <span>Free Luggage store</span>
+                      </li>
+                    </ul>
+                    <div class="wrapbtnBookTourPrice">
+                      <a href="#">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+                ...
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+
+              <!-- If we need scrollbar -->
+            </div>
+            <div class="swiper-button-prev">
+              <img src="./asset/imgs/icons8-left-arrow-50.png" alt="" />
+            </div>
+            <div class="swiper-button-next">
+              <img src="./asset/imgs/icons8-right-arrow-50.png" alt="" />
+            </div>
+          </div>
         </div>
       </section>
       <section class="formBigWrap sectionMain">
@@ -1498,7 +2249,7 @@
                       <small>Error message</small>
                     </div>
                   </div>
-                  <label for="date">Departure date: *</label>
+                  <label for="date" style="color: #fff">Start From: *</label>
                   <div class="form-control">
                     <input
                       type="date"
@@ -1511,11 +2262,13 @@
                   </div>
                   <div class="form-control">
                     <input
-                      type="text"
-                      placeholder="Your hostel in Ha Noi ?"
+                      type="number"
+                      placeholder="No of pax"
                       id="hostel"
                       name="hostel"
                       class="hostel"
+                      min="1"
+                      max="12"
                     />
                     <small>Error message</small>
                   </div>
@@ -1536,140 +2289,156 @@
           </div>
         </div>
       </section>
+
+      <section class="vids">
+        <h2>Video</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <a
+                class="videoPopUp"
+                href="https://www.youtube.com/watch?v=lBZ8eFCfYo8"
+              >
+                <span>
+                  <i class="fab fa-youtube"></i>
+                </span>
+              </a>
+              <div class="imgBgVid">
+                <img src="./asset/imgs/anhbgc.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-sm">
+              <h4>
+                One of the best locations to travel to in Vietnam - The Ha Giang
+                Loop
+              </h4>
+              <p>
+                With a total distance of 500 kilometers, the Ha Giang Loop is no
+                short task. However, the stunning views and exhilarating journey
+                will be the highlight of your Vietnam trip, the stunning views
+                and exhilarating journey will be the highlight of your Vietnam
+                trip, and perhaps the best few days of your life!
+              </p>
+              <div>
+                <!-- <div class="imgBgVid">
+                            <img src="./asset/imgs/anhbgc.jpg" alt="">
+                         </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <a
+                class="videoPopUp"
+                href="https://www.youtube.com/watch?v=lBZ8eFCfYo8"
+              >
+                <span>
+                  <i class="fab fa-youtube"></i>
+                </span>
+              </a>
+              <div class="imgBgVid">
+                <img src="./asset/imgs/anhbgc.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-sm">
+              <a
+                class="videoPopUp"
+                href="https://www.youtube.com/watch?v=lBZ8eFCfYo8"
+              >
+                <span>
+                  <i class="fab fa-youtube"></i>
+                </span>
+              </a>
+              <div class="imgBgVid">
+                <img src="./asset/imgs/anhbgc.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-sm">
+              <a
+                class="videoPopUp"
+                href="https://www.youtube.com/watch?v=lBZ8eFCfYo8"
+              >
+                <span>
+                  <i class="fab fa-youtube"></i>
+                </span>
+              </a>
+              <div class="imgBgVid">
+                <img src="./asset/imgs/anhbgc.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-sm">
+              <a
+                class="videoPopUp"
+                href="https://www.youtube.com/watch?v=lBZ8eFCfYo8"
+              >
+                <span>
+                  <i class="fab fa-youtube"></i>
+                </span>
+              </a>
+              <div class="imgBgVid">
+                <img src="./asset/imgs/anhbgc.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-3 p-3">
-            <a href="#">
-              <img
-                src="./asset/imgs/logo-img-03.png"
-                alt="logo-footer-ha-giang"
-              />
-            </a>
-          </div>
-          <div class="col-9 p-3">
+          <div class="col-4 d-flex justify-content-start flex-column">
+            <h2>Contact</h2>
+            <div>
+              <p>
+                <strong>Ha Giang: </strong>
+                Lam Dong, Phuong Thien – Ha Giang City
+              </p>
+              <p>
+                <strong>Ha Giang: </strong>
+                Lam Dong, Phuong Thien – Ha Giang City
+              </p>
+            </div>
             <p>
-              Based in Utah, USA, Wanderland is a blog by Markus Thompson. His
-              posts explore outdoor experiences through photos and diaries with
-              tips & tricks.
+              Email: hagiangtourloop@gmail.com
+              <br />
+              Phone: +84 0989897898
             </p>
+            <ul>
+              <li>
+                <i class="fab fa-facebook-f"></i>
+              </li>
+              <li>
+                <i class="fab fa-instagram"></i>
+              </li>
+              <li>
+                <i class="fab fa-youtube"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <h2>Site Map</h2>
+            <ul>
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Rent a bike in Ha Giang</a></li>
+              <li><a>Tour in Ha Giang</a></li>
+              <li><a>Happy Tour Blog</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-4 d-flex flex-column align-items-end">
+            <a href="#">
+              <img src="./asset/imgs/trip-advisor.png" alt="" />
+            </a>
+            <p>No. 1 of 31 Ranks</p>
+            <p>Outdoor Activities in Ha Giang</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-3 p-3">
-            <h5>Contact Ha Giang Tour</h5>
-
-            <ul class="items-box1F">
-              <li class="itemBox1">
-                <a href="#">
-                  <span class="iconlinkBox1"
-                    ><i class="fa-solid fa-location-dot"></i
-                  ></span>
-                  <span class="txtlinkBox1"
-                    >Booking office: 3 An Tieu, Hoan Kiem, Ha noi</span
-                  >
-                </a>
-              </li>
-              <li class="itemBox1">
-                <a href="#">
-                  <span class="iconlinkBox1"
-                    ><i class="fa-solid fa-phone"></i
-                  ></span>
-                  <span class="txtlinkBox1"
-                    >Phone: + 123345678 --- + 123345678</span
-                  >
-                </a>
-              </li>
-              <li class="itemBox1">
-                <a href="#">
-                  <span class="iconlinkBox1"
-                    ><i class="fa-solid fa-envelope"></i
-                  ></span>
-                  <span class="txtlinkBox1">Email: hagiangtour@gmail.com</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-3 p-3">
-            <h5>More Tour Ha Giang</h5>
-            <ul class="items-box2F">
-              <li class="itemBox2">
-                <a href="#">
-                  <span><i class="fa-solid fa-link"></i></span>
-                  <span class="txtlinkBox2"
-                    >Lorem is spum is lop popppp poi</span
-                  >
-                </a>
-              </li>
-              <li class="itemBox2">
-                <a href="#">
-                  <span><i class="fa-solid fa-link"></i></span>
-                  <span class="txtlinkBox2"
-                    >Lorem is spum is lop popppp poi</span
-                  >
-                </a>
-              </li>
-              <li class="itemBox2">
-                <a href="#">
-                  <span><i class="fa-solid fa-link"></i></span>
-                  <span class="txtlinkBox2"
-                    >Lorem is spum is lop popppp poi</span
-                  >
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-3 p-3">
-            <h5>Service</h5>
-            <ul class="items-box2F">
-              <li class="itemBox2">
-                <a href="#">
-                  <span><i class="fa-solid fa-link"></i></span>
-                  <span class="txtlinkBox2"
-                    >Lorem is spum is lop popppp poi</span
-                  >
-                </a>
-              </li>
-              <li class="itemBox2">
-                <a href="#">
-                  <span><i class="fa-solid fa-link"></i></span>
-                  <span class="txtlinkBox2"
-                    >Lorem is spum is lop popppp poi</span
-                  >
-                </a>
-              </li>
-              <li class="itemBox2">
-                <a href="#">
-                  <span><i class="fa-solid fa-link"></i></span>
-                  <span class="txtlinkBox2"
-                    >Lorem is spum is lop popppp poi</span
-                  >
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-3 p-3">
-            <h5>Social</h5>
-            <ul class="items-box3F">
-              <li class="itemBox3">
-                <a href="#">
-                  <span><i class="fa-brands fa-facebook-f"></i></span>
-                </a>
-              </li>
-              <li class="itemBox3">
-                <a href="#">
-                  <span><i class="fa-brands fa-instagram"></i></span>
-                </a>
-              </li>
-              <li class="itemBox3">
-                <a href="#">
-                  <span><i class="fa-brands fa-youtube"></i></span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      </div>
+      <div class="container-fluid text-center">
+        <p>
+          Copyright © 2023 – QT Motorbikes & Tours. Proudly Created by Dagiac
+        </p>
       </div>
     </footer>
     <div class="popUpWrapper">
@@ -1701,12 +2470,7 @@
     ></script>
     <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
 
-    <!-- <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
-      integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script> -->
+    <script src="./js/jquery.magnific-popup.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>

@@ -1,7 +1,7 @@
 document.getElementById("contentFormPopUp").innerHTML = `
 <div class="formWrapper">
   <div class="headerForm">
-    <h2>Nộp đơn ứng tuyển tại đây</h2>
+    <h2 style="margin: 30px; font-size: 20px; text-align: center; font-weight: 700; text-transform: uppercase;">Get In Touch With Us Here</h2>
   </div>
   <form id="formInTouchPopUp" class="form">
     <div class="seperate-wrapInput">
@@ -43,11 +43,13 @@ document.getElementById("contentFormPopUp").innerHTML = `
     </div>
     <div class="form-control">
       <input
-        type="text"
-        placeholder="Your hostel in Ha Noi ?"
+        type="number"
+        placeholder="No of pax"
         id="hostel"
         class="hostel"
         name="hostel"
+        min="1" 
+        max="12"
       />
       <small>Error message</small>
     </div>

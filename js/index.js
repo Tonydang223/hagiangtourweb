@@ -16,8 +16,13 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev",
     },
   });
+  let isLoop = true;
+
+  if($('.swiper-slide').length < 3) {
+      isLoop = false;
+  }
   new Swiper(".news-swiper-container", {
-    loop: true,
+    loop: isLoop,
     spaceBetween: 20,
     direction: "horizontal",
     breakpoints: {
@@ -34,10 +39,68 @@ $(document).ready(function () {
         slidesPerView: 3,
       },
     },
+    grabCursor: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    speed: 800,
+  });
+
+  //photosBlog-swiper-container
+  new Swiper(".photosBlog-swiper-container", {
+    // spaceBetween: 15,
+    loop: true,
+    direction: "horizontal",
+    breakpoints: {
+      500: {
+        slidesPerView: 1,
+      },
+      868: {
+        slidesPerView: 2,
+      },
+      1000: {
+        slidesPerView: 3,
+      },
+      1250: {
+        slidesPerView: 5,
+      },
+    },
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+    },
+    grabCursor: true,
+    speed: 800,
+  });
+  new Swiper(".vehicles-swiper-container", {
+    spaceBetween: 20,
+    direction: "horizontal",
+    breakpoints: {
+      500: {
+        slidesPerView: 1,
+      },
+      868: {
+        slidesPerView: 2,
+      },
+      1000: {
+        slidesPerView: 3,
+      },
+      1250: {
+        slidesPerView: 3,
+      },
+    },
+    grabCursor: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     speed: 800,
   });
 
   let isSubmitting = false;
+  let itemIday = '#tabContentTravelDetail1';
+
   $(".loader").hide();
 
   $(".tab-content").hide(); //hide All content
@@ -55,6 +118,44 @@ $(document).ready(function () {
       }
   })
 
+  $('.contentTabTravelDetails').hide();
+  var defaultTabTravelDetail = $('.travelDates li.active-tab-travel a').attr("href");
+  $(defaultTabTravelDetail).show();
+
+  $('.travelDates li a').on('click', function (e) {
+    e.preventDefault();
+    
+    $('.travelDates li').removeClass('active-tab-travel');
+
+    const relatedTrv = $(this).attr("href");
+    $(this).parent().addClass('active-tab-travel');
+    if($(this).parent().hasClass('active-tab-travel')) {
+        $('.contentTabTravelDetails').hide();
+        $(relatedTrv).show();
+    }
+  });
+
+
+
+
+  $('#menuScrollDay li').on('click', function (e) {
+    const refC = $(this).attr('data-scroll-menu');
+    const anchor = $(`#${refC}`).offset();
+
+    $('html, body').animate({ scrollTop: anchor.top },500);
+    return false;  
+  });
+
+
+  $('.videoPopUp').magnificPopup({
+    type: 'iframe'
+    // other options
+  });
+
+
+
+
+
   function resetValForm(nameFormWrap) {
     $(`${nameFormWrap} :input`).each(function () {
       const val = $(this).parent();
@@ -62,15 +163,9 @@ $(document).ready(function () {
     });
   }
 
-  $('#menuScrollDay li').on('click', function (e) {
-       const refC = $(this).attr('data-scroll-menu');
-       const anchor = $(`#${refC}`).offset();
 
-       $('html, body').animate({ scrollTop: anchor.top },500);
-       return false;  
-  });
 
-  $("#popUpBtn").on("click", function (e) {
+  $(".popUpBtn").on("click", function (e) {
     $(".popUpWrapper").css("display", "block");
     $("body").css("overflow-y", "hidden");
   });
@@ -83,7 +178,6 @@ $(document).ready(function () {
     $("body").css("overflow-y", "scroll");
 
   });
-  console.log(isSubmitting);
 
   function submitFormTouch(e, nameFormWrap) {
     e.preventDefault();
@@ -92,14 +186,19 @@ $(document).ready(function () {
 
     setTimeout(() => {
       let vals = checkInput(nameFormWrap);
+      console.log('a0')
+      const defaultVNumFormHome = 4;
+      const defaultVNumFormContact = 3;
 
-      if (Object.keys(vals).length === 4) {
-        vals.message = $(`${nameFormWrap} .message`).val().trim();
-        vals.country = $(`${nameFormWrap} .country`).val().trim();
+      if (Object.keys(vals).length === defaultVNumFormHome || Object.keys(vals).length === defaultVNumFormContact) {
+        vals.message = $(`${nameFormWrap} .message`)?.val()?.trim();
+        vals.country = $(`${nameFormWrap} .country`)?.val()?.trim();
         $(`${nameFormWrap} .loader`).show();
         resetValForm(nameFormWrap);
         isSubmitting = true;
+        console.log('a1')
         setTimeout(() => {
+          console.log('a2')
           $(`${nameFormWrap} .loader`).hide();
           $(`${nameFormWrap}`)[0].reset();
           Email.send({
@@ -114,12 +213,13 @@ $(document).ready(function () {
               - Tên: ${vals.name}
               - Email: ${vals.email}
               - Số điện thoại: ${vals.phone}
-              - Ngày đến: ${vals.date}
+              - Ngày đến: ${vals.date ? vals.date : ''}
               - Nội dung yêu cầu: ${
                 vals?.message ? vals?.message : "Chưa có yêu cầu nào !"
               }
             `,
-          }).then((message) => alert(message));
+          }).then((message) => alert(message))
+          .catch((err) => console.log(err));
           isSubmitting = false;
         }, 1000);
       } else {
@@ -134,7 +234,9 @@ $(document).ready(function () {
   });
   $("#formInTouchPopUp").on("submit", function (e) {
     submitFormTouch(e, "#formInTouchPopUp");
-    console.log("vo");
+  });
+  $("#formContact").on("submit", function (e) {
+    submitFormTouch(e, "#formContact");
   });
 
   function getFullDate(date) {
@@ -148,11 +250,10 @@ $(document).ready(function () {
   }
 
   function checkInput(formWrap) {
-    const name = $(`${formWrap} .username`).val().trim();
-    const date = $(`${formWrap} .date`).val().trim();
-    console.log("🚀 ~ file: index.js:107 ~ checkInput ~ name:", name);
-    const phone = $(`${formWrap} .phone`).val().trim();
-    const email = $(`${formWrap} .email`).val().trim();
+    const name = $(`${formWrap} .username`)?.val()?.trim();
+    const date = $(`${formWrap} .date`)?.val()?.trim();
+    const phone = $(`${formWrap} .phone`)?.val()?.trim();
+    const email = $(`${formWrap} .email`)?.val()?.trim();
     const currentDate = new Date();
     let res = {};
 
@@ -198,6 +299,8 @@ $(document).ready(function () {
     return res;
   }
 
+  
+
   function setErrorFor(input, message, type) {
     const formControl = input.parent();
     const small = formControl.find("small");
@@ -209,6 +312,31 @@ $(document).ready(function () {
     const formControl = input.parent();
     formControl.addClass("success").removeClass("error");
   }
+
+  $(window).on("scroll", function () {
+    const scrollY = window.scrollY;
+
+    if (scrollY < 200) {
+        $(".boxBottomNav").removeClass("scrollHeader");
+      } else {
+        $(".boxBottomNav").addClass("scrollHeader");
+    }
+
+    $('section').each((i, obj) => {
+        const height = $(obj).height();
+        const top = $(obj).offset().top - 250;
+        console.log("🚀 ~ file: index.js:328 ~ $ ~ height:", height)
+        const id = $(obj).attr("id");
+        console.log("🚀 ~ file: index.js:329 ~ $ ~ id:", id)
+        if (scrollY >= top && top + height >= scrollY) {
+          $('header nav li a').each((e, i) => {
+            $('header nav li a').removeClass('active');
+            $(`header nav li a[href="#${id}"]`)
+              ?.addClass("active");
+          });
+        }
+    });
+  })
 });
 
 
